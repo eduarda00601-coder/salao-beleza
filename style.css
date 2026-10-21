@@ -1,0 +1,191 @@
+
+
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f3;
+  color: #542438;
+}
+
+header {
+  background: #70283f;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color: #ffc8d5;
+}
+
+.hero {
+  min-height: 580px;
+  padding: 55px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f7cbd3, #fff0e8);
+}
+
+.card {
+  background: #fffaf7;
+  width: 100%;
+  max-width: 780px;
+  text-align: center;
+  padding: 45px 30px;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px #70283f20;
+}
+
+.emoji {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: #70283f;
+}
+
+.card h3 {
+  color: #b34f6b;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: block;
+  background: #b84d6b;
+  color: white;
+  padding: 17px 12px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #70283f;
+  transform: translateY(-2px);
+}
+
+.btn.destaque {
+  background: #70283f;
+}
+
+.beneficios {
+  padding: 35px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+  text-align: center;
+  background: #fffaf7;
+}
+
+.beneficios div {
+  max-width: 200px;
+  line-height: 1.6;
+}
+
+.precos {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.precos h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.lista-precos {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 5px 20px #70283f15;
+}
+
+.lista-precos h3 {
+  margin: 18px 0 8px;
+  color: #a53e5d;
+}
+
+.lista-precos p {
+  padding: 7px 0;
+  border-bottom: 1px solid #f3dce3;
+}
+
+.aviso {
+  font-size: 13px;
+  margin-top: 18px;
+  color: #765866;
+}
+
+footer {
+  background: #70283f;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 550px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 14px;
+  }
+
+  .card h2 {
+    font-size: 34px;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+}
